@@ -8,7 +8,8 @@ module.exports = {
   entry: resolve('src/index.tsx'),
   output: {
     filename: '[name].[hash:8].js',
-    path: resolve('dist')
+    path: resolve('dist'),
+    publicPath: '/'
   },
 
   devServer: {
@@ -16,6 +17,10 @@ module.exports = {
     port: 3000,
     historyApiFallback: true,
     hot: true
+  },
+
+  resolve: {
+    extendsions: ['.ts', '.tsx', '.js', '.jsx']
   },
 
   module: {
