@@ -1,13 +1,17 @@
 module.exports = {
   presets: [
     [
-      '@babel/preset-env',
+      "@babel/preset-env",
       {
-        useBuiltIns: 'usage'
+        useBuiltIns: "usage"
       }
     ],
-    '@babel/preset-react',
-    '@babel/preset-typescript'
+    "@babel/preset-react",
+    "@babel/preset-typescript"
   ],
-  plugins: []
-}
+  plugins: [
+    "@babel/plugin-proposal-optional-chaining",
+    ["@babel/plugin-proposal-decorators", { legacy: true }],
+    ["@babel/plugin-proposal-class-properties", { loose: true }]
+  ]
+};
