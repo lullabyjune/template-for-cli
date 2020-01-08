@@ -9,7 +9,7 @@ module.exports = {
   output: {
     filename: '[name].[hash:8].js',
     path: resolve('dist'),
-    publicPath: '/'
+    publicPath: './'
   },
 
   devServer: {
