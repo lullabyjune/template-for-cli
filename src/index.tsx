@@ -1,8 +1,8 @@
-import React from 'react';
-import ReactDom from 'react-dom'
+import React from "react";
+import ReactDom from "react-dom";
 
-import { App }  from './app'
+import { App } from "./app";
 
-window.React = React
+window.React = React;
 
-ReactDom.render(<App />, document.getElementById('root'))
+ReactDom.render(<App />, document.getElementById("root"));
