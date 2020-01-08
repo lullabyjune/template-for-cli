@@ -20,7 +20,7 @@ module.exports = {
   },
 
   resolve: {
-    extendsions: ['.ts', '.tsx', '.js', '.jsx']
+    extensions: ['.ts', '.tsx', '.js', '.jsx']
   },
 
   module: {
