@@ -4,8 +4,8 @@
   "description": "{{projectDescription}}",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack-dev-server --config build/webpack.base.js --mode development --open",
-    "build": "webpack --config build-config/webpack.base.js --mode production"
+    "dev": "webpack-dev-server --config build-config/webpack.base.js --mode development --open",
+    "build": "cross-env NODE_ENV=./ webpack --config build-config/webpack.base.js --mode production"
   },
   "keywords": [],
   "author": "",
@@ -23,6 +23,7 @@
     "@types/react": "^16.9.17",
     "@types/react-dom": "^16.9.4",
     "babel-loader": "^8.0.6",
+    "cross-env": "^6.0.3",
     "html-webpack-plugin": "^3.2.0",
     "typescript": "^3.7.4",
     "webpack": "^4.41.5",

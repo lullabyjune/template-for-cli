@@ -4,12 +4,15 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 const resolve = filePath => path.join(__dirname, '..', filePath)
 
+const publicPath = process.env.publicPath || '/'
+
 module.exports = {
   entry: resolve('src/index.tsx'),
+
   output: {
     filename: '[name].[hash:8].js',
     path: resolve('dist'),
-    publicPath: './'
+    publicPath: publicPath
   },
 
   devServer: {
